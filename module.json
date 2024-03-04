@@ -1,0 +1,32 @@
+{
+  "id": "everybody-liked-this",
+  "title": "Everybody liked this",
+  "description": "A simple plugin that adds a 'like' button and overlay.",
+  "authors": [{ "name": "Tim Weidner" }],
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  },
+  "esmodules": ["scripts/everybody-liked-this.js"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "styles": ["styles/everybody-liked-this.css"],
+  "relationships": {
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module",
+        "compatibility": {
+          "verified": "1.0.13"
+        }
+      }
+    ]
+  },
+  "socket": true
+}

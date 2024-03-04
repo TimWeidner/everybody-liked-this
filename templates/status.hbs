@@ -1,0 +1,24 @@
+<section class="statusbox">
+  <button
+    type="button"
+    class="module-control"
+    title="Approve of this action"
+    data-approval="true"
+    style="flex-grow: 0; border-radius: 0; background: none; border: 0; color: var(--color-text-light-highlight); box-shadow: none;"
+  >
+    <i class="fas fa-thumbs-up"></i>
+  </button>
+  <button
+    type="button"
+    class="module-control"
+    title="Disapprove of this action"
+    data-approval="false"
+    style="flex-grow: 0; border-radius: 0; background: none; border: 0; color: var(--color-text-light-highlight); box-shadow: none;"
+  >
+    <i class="fas fa-thumbs-down"></i>
+  </button>
+  <style>
+    .statusbox div:not(:last-child) { border-bottom: 1px solid
+    var(--color-text-light-highlight); }
+  </style>
+</section>
