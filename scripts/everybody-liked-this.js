@@ -6,7 +6,7 @@ class Status extends Application {
     return foundry.utils.mergeObject(super.defaultOptions, {
       id: "elt-status",
       title: "Messages",
-      template: `modules/everybody-liked-this/templates/status.hbs`,
+      template: `modules/everybodylikedthis/templates/status.hbs`,
       width: 300,
       height: 100,
       top: 80,
@@ -39,14 +39,14 @@ const cleanWindowClass = (application) => {
 };
 
 Hooks.once("socketlib.ready", () => {
-  socket = socketlib.registerModule("everybody-liked-this");
+  socket = socketlib.registerModule("everybodylikedthis");
   socket.register("approval", approval);
   console.log("The socket is ready to be used.");
 });
 
 Hooks.once("init", () => {
   console.log("Everybody Liked This | Initializing the module.");
-  module = game.modules.get("everybody-liked-this");
+  module = game.modules.get("everybodylikedthis");
   module.status = new Status();
   module.status.render(true);
 });
