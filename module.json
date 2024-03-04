@@ -3,7 +3,7 @@
   "title": "Everybody liked this",
   "description": "A simple plugin that adds 'approve' and 'disapprove' buttons and an overlay.",
   "authors": [{ "name": "Tim Weidner" }],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "10",
     "verified": "11"
@@ -20,5 +20,9 @@
       }
     ]
   },
-  "socket": true
+  "socket": true,
+  "url": "https://github.com/TimWeidner/everybody-liked-this",
+  "download": "https://github.com/TimWeidner/everybody-liked-this/archive/v1.0.1.zip",
+  "manifest": "https://raw.githubusercontent.com/TimWeidner/everybody-liked-this/main/module.json",
+  "bugs": "https://github.com/TimWeidner/everybody-liked-this/issues"
 }
