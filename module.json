@@ -1,7 +1,7 @@
 {
-  "id": "everybody-liked-this",
+  "id": "everybodylikedthis",
   "title": "Everybody liked this",
-  "description": "A simple plugin that adds a 'like' button and overlay.",
+  "description": "A simple plugin that adds 'approve' and 'disapprove' buttons and an overlay.",
   "authors": [{ "name": "Tim Weidner" }],
   "version": "1.0.0",
   "compatibility": {
@@ -9,13 +9,6 @@
     "verified": "11"
   },
   "esmodules": ["scripts/everybody-liked-this.js"],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
   "relationships": {
     "requires": [
       {
