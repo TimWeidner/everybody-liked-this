@@ -1,19 +1,6 @@
 let socket;
 let module;
 
-class LikeOrDislike extends Application {
-  static get defaultOptions() {
-    return foundry.utils.mergeObject(super.defaultOptions, {
-      id: "elt-like",
-      title: "Approval",
-      template: `modules/everybody-liked-this/templates/like-or-dislike.hbs`,
-      width: 100,
-      height: 63,
-      resizable: false,
-    });
-  }
-}
-
 class Status extends Application {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
@@ -60,15 +47,11 @@ Hooks.once("socketlib.ready", () => {
 Hooks.once("init", () => {
   console.log("Everybody Liked This | Initializing the module.");
   module = game.modules.get("everybody-liked-this");
-  //module.likeOrDislike = new LikeOrDislike();
-  //module.likeOrDislike.render(true);
   module.status = new Status();
   module.status.render(true);
 });
 
 Hooks.once("ready", async () => {
-  //cleanWindowClass(module.likeOrDislike);
-  //module.likeOrDislike.element[0].style.width = "100px";
   cleanWindowClass(module.status);
   Array.from(
     module.status.element[0].querySelectorAll(".module-control")

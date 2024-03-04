@@ -16,7 +16,6 @@
       "path": "languages/en.json"
     }
   ],
-  "styles": ["styles/everybody-liked-this.css"],
   "relationships": {
     "requires": [
       {
