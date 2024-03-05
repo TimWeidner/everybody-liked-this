@@ -21,7 +21,8 @@ const getCurrentUser = () => game.users.current;
 
 const sendApproval = (approval) => {
   const user = getCurrentUser();
-  socket.executeForEveryone("approval", user.name, approval);
+  const name = canvas?.tokens?.controlled?.[0]?.name ?? user?.character?.name ?? user.name
+  socket.executeForEveryone("approval", name, approval);
 };
 
 const cleanWindowClass = (application) => {
