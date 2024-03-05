@@ -1,28 +1,26 @@
 {
-  "id": "everybodylikedthis",
-  "title": "Everybody liked this",
-  "description": "A simple plugin that adds 'approve' and 'disapprove' buttons and an overlay.",
-  "authors": [{ "name": "Tim Weidner" }],
-  "version": "1.0.3",
-  "compatibility": {
-    "minimum": "10",
-    "verified": "11"
-  },
-  "esmodules": ["scripts/everybody-liked-this.js"],
-  "relationships": {
-    "requires": [
-      {
-        "id": "socketlib",
-        "type": "module",
-        "compatibility": {
-          "verified": "1.0.13"
-        }
-      }
-    ]
-  },
-  "socket": true,
-  "url": "https://github.com/TimWeidner/everybody-liked-this",
-  "download": "https://github.com/TimWeidner/everybody-liked-this/archive/v1.0.3.zip",
-  "manifest": "https://raw.githubusercontent.com/TimWeidner/everybody-liked-this/main/module.json",
-  "bugs": "https://github.com/TimWeidner/everybody-liked-this/issues"
+    "id": "everybodylikedthis",
+    "title": "Everybody liked this",
+    "description": "A simple plugin that adds 'approve' and 'disapprove' buttons and an overlay.",
+    "authors": [{ "name": "Tim Weidner" }],
+    "version": "#{VERSION}#",
+    "compatibility": {
+        "minimum": "10",
+        "verified": "11"
+    },
+    "esmodules": ["scripts/everybody-liked-this.js"],
+    "relationships": {
+        "requires": [{
+            "id": "socketlib",
+            "type": "module",
+            "compatibility": {
+                "verified": "1.0.13"
+            }
+        }]
+    },
+    "socket": true,
+    "url": "#{URL}#",
+    "manifest": "#{MANIFEST}#",
+    "download": "#{DOWNLOAD}#",
+    "bugs": "https://github.com/TimWeidner/everybody-liked-this/issues"
 }
